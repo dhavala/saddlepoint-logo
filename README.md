@@ -23,4 +23,13 @@ Both presets use a transparent background, logo size **150%**, Saddle ink **50%*
 
 `presets/default/` and `presets/neon-lime/` each contain six files: `logo.svg`, `text.svg`, `logo-text.svg`, and matching `.png` files. PNGs render at 2× SVG resolution with transparency preserved. The editor also offers PNG download buttons for custom configurations.
 
+## Goodnotes video templates
+
+Two standalone 16:9 PDF templates are available in [`templates/`](templates/):
+
+- [Light template](templates/saddlepoint-template-light.pdf) uses the pale-yellow background and default foreground.
+- [Dark template](templates/saddlepoint-template-dark.pdf) uses a dark background and neon-lime foreground.
+
+Each PDF has two pages: an unboxed logo-only cover placeholder and a blank branded page for notes or diagrams. Neither page has a slide number.
+
 To regenerate all assets, install Playwright and run `node scripts/export-presets.cjs`. Optionally set `BROWSER_EXECUTABLE` to an existing Chromium browser executable.
